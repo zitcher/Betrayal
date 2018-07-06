@@ -1,0 +1,494 @@
+input[type="number"] {
+  width: 3em;
+}
+
+html, body {
+	margin: 0;
+  padding: 0;
+  width:100% !important;
+  height: 100% !important;
+}
+
+.game {
+  display:flex;
+  flex-direction:column;
+  border-style:solid;
+  border-width:0px !important;
+
+  background: url(dg_wall.jpg) #016d0f no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  margin: 0 !important;
+  padding: 0 !important;
+  width:100% !important;
+  height: 100% !important;
+}
+
+.gameTitle{
+  float:left;
+  border-width:0px;
+  background: rgba(54, 25, 25, 0) !important;
+
+  width:100%;
+  margin:5px;
+  font-family: 'Squada One', cursive;
+  font-weight: bold;
+  color: #eaeaea;
+  font-size: 3em;
+  margin: 0px;
+  text-align:center;
+}
+
+.main_game {
+  display:flex;
+  flex-direction:row;
+  height:73%;
+}
+
+.board {
+  float:left;
+  width:70%;
+  border-style:solid;
+  border-width:2px;
+  margin:5px;
+  background-color:#eeeeee;
+  border-radius:5px;
+}
+
+.card_description {
+  width:95%;
+  height:80%;
+  border-style:solid;
+  border-width:2px;
+  margin-bottom:5px;
+  background-color:#eeeeee;
+}
+
+.card_name {
+  width:100%;
+  height:10%;
+  margin-bottom:10px;
+  margin-bottom:5px;
+  background-color:#ffffff;
+}
+
+.card {
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  top:30%;
+  left:18%;
+  float:left;
+  z-index:20;
+  height:350px;
+  width:250px;
+  border-style:solid;
+  border-width:2px;
+  margin-bottom:5px;
+  background-color:#ffffff;
+}
+
+.card_logic {
+	width:95%;
+	margin:5px;
+}
+
+.card_cont {
+  width:100%;
+  height:500px;
+  border-width:2px;
+  overflow-y:auto;
+}
+
+
+.player_1 {
+  display:flex;
+  flex-direction:column;
+  float:left;
+  width:15%;
+  border-style:solid;
+  border-width:2px;
+  margin:5px;
+  background-color:#eeeeee;
+}
+
+.stat {
+  width:88%;
+  border-style:solid;
+  border-width:2px;
+  margin:2px;
+  margin-left:5px;
+  margin-right:5px;
+  background-color:#eeeeee;
+}
+
+.icon_1 {
+  margin:5px;
+}
+
+.player_row {
+  margin: 5px;
+  padding: 0;
+  display:flex;
+  flex-direction:row;
+  height:20%;
+}
+
+.player {
+  display:flex;
+  flex-direction:row;
+  width:20%;
+  height:80%;
+  margin-top:1%;
+  margin-bottom:1%;
+  margin-left:5px;
+  margin-right:5px;
+  background-color:#707070;
+  border-radius: 5px;
+  border-style:solid;
+  border-width:2px;
+}
+
+.info {
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  border-style:solid;
+  border-width:2px;
+  margin:5px;
+  background-color:#eeeeee;
+}
+
+.image {
+  display:flex;
+  flex-direction:column;
+  margin:5px;
+}
+
+.popup_stats {
+  z-index: 20;
+  top:184px;
+  display:none;
+  position:absolute;
+  border-style:solid;
+  border-color:#eeeeee;
+  border-width:2px;
+  background-color:#ffffff;
+}
+
+.stats {
+  width:100%;
+  border-style:solid;
+  border-width:2px;
+  background-color:#eeeeee;
+}
+
+.icon {
+  width:100%;
+  margin-left:2px;
+  margin-top:2px;
+}
+
+.title_row {
+  display:flex;
+  flex-direction:row;
+  height:7%;
+  border-width:0px;
+  background: rgba(54, 25, 25, 0);
+}
+
+/*OBJECTIVES*/
+
+.interaction {
+  display:flex;
+  flex-direction:column;
+  width:25%;
+}
+
+.objective {
+  height:50%;
+  margin:5px;
+}
+
+.obj_info {
+  overflow-y:auto;
+  height:80%;
+  margin:5px;
+  background-color:#eeeeee;
+}
+
+/*CHAT*/
+
+.chat {
+  display:flex;
+  flex-direction:column;
+  height:50%;
+  margin:5px;
+}
+
+.log {
+  font-family:Arial;
+  overflow-y:auto;
+  height:75%;
+  border-color:#eeeeee;
+  border-width:2px;
+  margin:5px;
+  background-color:#eeeeee;
+}
+
+#chat_text {
+  width:90%;
+  color: black;
+}
+
+/* LOBBY */
+
+.main_menu{
+  display:flex;
+  flex-direction:row;
+  position:absolute;
+  top:0;
+  left:0;
+  float:left;
+  z-index:20;
+  height:100%;
+  width:100%;
+  background: url(dg_wall.jpg) #016d0f no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.option{
+  height:80%;
+  width:70%;
+  margin-top:5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 0%;
+
+  background-color: #232323 !important;
+  border-radius: 1px;
+
+  border-color: #000000;
+  border-width: 5px black !important;
+
+  color: white;
+}
+
+.option .title {
+  font-family: 'Squada One', cursive;
+  font-weight: bold;
+  color: #eaeaea;
+  font-size: 4em;
+  margin: 0px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-width: 0px;
+  text-align:center;
+}
+
+.option .contents {
+  text-align: left;
+  margin: 15px;
+  height: 80%;
+}
+
+#lobbies{
+  overflow-y:auto;
+  height:50%;
+  border-style:solid;
+  border-width:0px;
+  background-color: #afafaf;
+}
+
+#players {
+  overflow-y:auto;
+  height: 60%;
+  border-style:solid;
+  border-width:0px;
+  background-color: #afafaf;
+}
+
+#members {
+  height: 100%;
+}
+
+input[type=text]{
+    border: 2px solid white;
+    -webkit-box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    -moz-box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    box-shadow:
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1);
+    padding: 5px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+    color: #eaeaea;
+    font-family: 'Squada One', cursive;
+    font-size: 1em;
+}
+
+.message {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.lobby_name {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 1.2em;
+  width: 99%;
+
+  border-width: 3px !important;
+  border-bottom: solid #9b9b9b;
+  border-radius: 1.5px;
+}
+
+.lobby_name:hover {
+  background-color: #9b9b9b;
+}
+
+.selected_lobby {
+  background-color: #9b9b9b;
+}
+
+.member_name {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 1.2em;
+  width: 99%;
+
+  border-width: 3px !important;
+  border-bottom: solid #9b9b9b;
+  border-radius: 1.5px;
+}
+
+.member_name:hover {
+  background-color: #9b9b9b;
+}
+
+
+/* GENERIC */
+
+.wrapper {
+  position:relative;
+  border-style:solid;
+  border-width:2px;
+  background-color:#eeeeee;
+}
+
+.text_title {
+  font-family: 'Squada One', cursive;
+  font-size: 1em;
+  color: #eaeaea;
+  margin-bottom: 10px;
+}
+
+.text_normal {
+  font-family: 'Scada', sans-serif !important;
+  font-size: 1em;
+  color: #eaeaea;
+}
+
+.text_basic {
+  font-family: 'Scada', sans-serif !important;
+  font-size: 1em;
+  color: black;
+}
+
+.menu_button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 5px;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	-webkit-box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	box-shadow:inset 0px 34px 0px -15px #b54b3a;
+	background-color:#a73f2d;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+  width:10em;
+}
+.myButton:hover {
+	background-color:#b34332;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.dark_bg {
+  background-color: #232323 !important;
+  color: #eaeaea;
+}
+
+.user_text {
+  border-width: 0;
+}
+
+.box {
+  background-color: #afafaf !important;
+  border-radius: 5px;
+}
+
+.light_bg {
+  border-width:0px;
+  background-color: #afafaf;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 0px !important;
+}
+
+.big {
+  font-size: 2em;
+}
+
+.resize_choice {
+  width:45% !important;
+  height:80% !important;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+
+/*CANVAS*/
+#container {
+  height: 100%;
+  width: 100%;
+}
+
+#box {
+  height: 100%;
+}
+
+#descr {
+  height: 100%
+}
+
+.center{
+  text-align: center !important;
+}
