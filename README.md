@@ -1,8 +1,3 @@
-# Betrayal
-I wrote the backend java code for this project.
-
-This includes the game's structure (Game folder, House folder, System folder, AbstractEvent, Omen, AbstractChar contents),  multiplayer features (GameWebSocket file), REPL, the Spark REST api, etc.
-
 # Spec
 In the home page, a user is given two options given by two side-by-side boxes: to either create a game group or join a game group. Since Betrayal is a game played between 3-6 players, one person should be the host and create a game. If you are the host and are creating a game, you have the option to name the group, select how many players should be in the group (3-6, including yourself), and an optional password if need be. If you are not looking to host a game, you can join any game that is available in the “join a game” box, which is basically a lobby. Password protected games require a password. A list of game group of names and number of players needed is given for every available group, as well as an option to join that group if one wishes.
 
@@ -21,4 +16,8 @@ If you reveal an item tile while discovering a new room, you get an item (everyo
 Until the haunt starts, the objective of everyone is to explore the house. Everybody is on the same team. Once the haunt starts, though, there are new objectives for everybody depending on the haunt. (All objectives are shown on the right strip; it’ll show different things depending on whether you are a traitor or not). Usually, there is a traitor, and the traitor has different objectives from everyone else from now on. The traitor knows things that other players don’t, and the players usually know things that the traitor doesn’t as well. Once the objective is fulfilled, either by the traitor or the rest of the players, the game ends.
 
 Once the haunt starts, traitors (and anything on the traitor’s side; sometimes, the traitor works with monsters or other things that appear once the haunt starts) can attack other players, and vice-versa. You can only attack someone if you are in the same room as them. To attack, you roll dice equal to your might (another stat), and so does the character you are attacking. The difference is taken in damage to any of your stats, depending on which result is higher.
+
+I wrote the backend java code for this project.
+
+This includes the game's structure (Game folder, House folder, System folder, AbstractEvent, Omen, AbstractChar contents),  multiplayer features (GameWebSocket file), REPL, the Spark REST api, etc.
 
